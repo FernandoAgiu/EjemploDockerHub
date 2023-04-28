@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //Aquí debes poner tu github
-		sh 'docker build -t https://github.com/psegarrac/EjemploDockerHub .'
+		sh 'docker build -t https://github.com/FernandoAgiu/EjemploDockerHub-FernandoAgiu .'
             }
         }
         stage('DockerHUB Login') {
@@ -24,8 +24,8 @@ pipeline {
             }
         stage('Docker Push') {
             steps {
-		//Aquí debes poner tu github
-                sh 'docker push https://github.com/psegarrac/EjemploDockerHub'
+		//Aquí debes poner tu DockerHub
+                sh 'docker push fernandoagiu/nodejs'
                 }
             }
         }
@@ -35,4 +35,3 @@ pipeline {
 		}
 	 }
     }
-
