@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //Aquí debes poner tu github
-		sh 'docker build -t https://github.com/FernandoAgiu/EjemploDockerHub-FernandoAgiu .'
+		sh 'docker build -t fernandoagiu/nodejs-image-demo . '
             }
         }
         stage('DockerHUB Login') {
