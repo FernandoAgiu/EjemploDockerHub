@@ -25,7 +25,7 @@ pipeline {
         stage('Docker Push') {
             steps {
 		//Aquí debes poner tu DockerHub
-                sh 'docker push fernandoagiu/nodejs'
+                sh 'docker push fernandoagiu/nodejs-image-demo'
                 }
             }
         }
